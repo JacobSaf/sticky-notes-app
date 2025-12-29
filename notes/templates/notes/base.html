@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Sticky Notes{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'notes/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1><a href="{% url 'note_list' %}">Sticky Notes</a></h1>
+        <nav>
+            <a href="{% url 'add_note' %}">Add Note</a>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        <!-- Page-specific content goes here -->
+        {% endblock %}
+    </main>
+</body>
+</html>

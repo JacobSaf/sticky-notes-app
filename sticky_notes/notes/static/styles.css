@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    padding: 20px;
+}
+
+.notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.note {
+    background: #fffb8f;
+    width: 200px;
+    padding: 15px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+    border-radius: 8px;
+}
+
+.note h3 {
+    margin-top: 0;
+}
+
+.note a {
+    font-size: 0.9em;
+    margin-right: 5px;
+}

@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    padding: 20px;
+}
+
+.notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.sticky-note {
+    width: 200px;
+    min-height: 150px;
+    background: #fff9a8;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transform: rotate(-2deg);
+    transition: transform 0.2s ease;
+}
+
+.sticky-note:hover {
+    transform: rotate(0deg) scale(1.03);
+}
+
+.sticky-note h3 {
+    margin-top: 0;
+}
+
+.note-actions {
+    margin-top: 10px;
+}
+
+.note-actions a {
+    margin-right: 10px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}

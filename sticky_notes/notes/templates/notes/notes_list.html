@@ -1,0 +1,22 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'notes/styles.css' %}">
+
+<h1>Sticky Notes</h1>
+
+<a href="/add/">Add Note</a>
+
+<div class="notes-container">
+{% for note in notes %}
+    <div class="note">
+        <h3>{{ note.title }}</h3>
+        <p>{{ note.content }}</p>
+
+        <a href="/edit/{{ note.id }}/">Edit</a> |
+        <a href="/delete/{{ note.id }}/"
+           onclick="return confirm('Delete this note?');">
+           Delete
+        </a>
+    </div>
+{% endfor %}
+</div>
+
